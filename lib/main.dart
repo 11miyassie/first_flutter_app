@@ -1,3 +1,4 @@
+import 'package:first_flutter_app/next_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -52,6 +53,13 @@ class _MyHomePageState extends State<MyHomePage> {
           child: Text('次へ'),
           onPressed: (){
             // ここに押したら反応するコードをかく
+            // 画面遷移のコード
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                  builder: (context) => NextPage()
+              ),
+            );
           },
         ),
       ),

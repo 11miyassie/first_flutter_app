@@ -15,3 +15,5 @@ onPressedでボタンを押せるようになる。この中に画面遷移の�
 
 新しいファイル(dart)を作ってクラス名を指定した時、赤い波アンダーバーをクリック、「Create 1 missing override」を押すと自動で雛形?みたいなのを作ってくれる
 importにはcupertinoかmaterialが入っていればOK
+
+onPressedの中に書く画面遷移のコードは公式からコピペするとかでOK

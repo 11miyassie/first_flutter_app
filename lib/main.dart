@@ -47,20 +47,12 @@ class _MyHomePageState extends State<MyHomePage> {
           Icon(Icons.share)
         ],
       ),
-      body: Container(
-        color: Colors.red,
-        height: double.infinity,
-        width: 300,
-        child: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Row(
-            children: <Widget>[
-              Text('↑らしい'),
-              Text('↑らしい'),
-              Text('↑らしい'),
-              Text('↑らしい'),
-            ],
-          ),
+      body: Center(
+        child: RaisedButton(
+          child: Text('次へ'),
+          onPressed: (){
+            // ここに押したら反応するコードをかく
+          },
         ),
       ),
       floatingActionButton: FloatingActionButton(

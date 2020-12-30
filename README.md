@@ -17,3 +17,4 @@ onPressedでボタンを押せるようになる。この中に画面遷移の�
 importにはcupertinoかmaterialが入っていればOK
 
 onPressedの中に書く画面遷移のコードは公式からコピペするとかでOK
+この中に Navigator.pop(context); を入れることで前のページに戻るボタンが作れる;

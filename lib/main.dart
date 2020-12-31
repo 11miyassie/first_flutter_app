@@ -38,6 +38,8 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  String text = '次へ';
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -50,7 +52,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Center(
         child: RaisedButton(
-          child: Text('次へ'),
+          child: Text(text),
           onPressed: () async {
             // ここに押したら反応するコードをかく
             // 画面遷移のコード
@@ -60,6 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   builder: (context) => NextPage('york'),
               ),
             );
+            text = result;
             print(result);
           },
         ),

@@ -51,20 +51,28 @@ class _MyHomePageState extends State<MyHomePage> {
         ],
       ),
       body: Center(
-        child: RaisedButton(
-          child: Text(text),
-          onPressed: () async {
-            // ここに押したら反応するコードをかく
-            // 画面遷移のコード
-            final result = await Navigator.push(
-              context,
-              MaterialPageRoute(
-                  builder: (context) => NextPage('york'),
-              ),
-            );
-            text = result;
-            print(result);
-          },
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.network(
+              'https://kinsta.com/jp/wp-content/uploads/sites/6/2019/09/jpg-vs-jpeg-1024x512.jpg',
+            ),
+            RaisedButton(
+              child: Text(text),
+              onPressed: () async {
+                // ここに押したら反応するコードをかく
+                // 画面遷移のコード
+                final result = await Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => NextPage('york'),
+                  ),
+                );
+                text = result;
+                print(result);
+              },
+            ),
+          ],
         ),
       ),
       floatingActionButton: FloatingActionButton(

@@ -1,5 +1,11 @@
 # first_flutter_app
 
+画面から画面はデータを渡すにはonPressed内のコードで渡したい画面のルートに情報を書き、渡されたページで
+  NextPage(this.name);
+  final String name; と書く。nameは変数名
+
+async, await で一旦情報の処理を停止することができる。
+
 widgetを重ねてアプリのUIを作る
 
 Column Widgetは縦に並ぶ

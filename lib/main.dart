@@ -54,8 +54,8 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.network(
-              'https://kinsta.com/jp/wp-content/uploads/sites/6/2019/09/jpg-vs-jpeg-1024x512.jpg',
+            const Image(
+              image: NetworkImage('https://kinsta.com/jp/wp-content/uploads/sites/6/2019/09/jpg-vs-jpeg-1024x512.jpg',),
             ),
             RaisedButton(
               child: Text(text),

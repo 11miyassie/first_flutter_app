@@ -30,3 +30,6 @@ onPressedの中に書く画面遷移のコードは公式からコピペする�
 printでコンソールに出力できる
 
 画像出力には、image.networkに画像のURLのを入れる
+const Image(
+  image: NetworkImage()
+), で、image: NetworkImage()内にURLを入れても表示できる

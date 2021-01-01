@@ -54,7 +54,10 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset('images/sample_png.png'),
+            Icon(
+              Icons.mark_email_read,
+              size: 200,
+            ),
             RaisedButton(
               child: Text(text),
               onPressed: () async {

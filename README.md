@@ -33,3 +33,10 @@ printでコンソールに出力できる
 const Image(
   image: NetworkImage()
 ), で、image: NetworkImage()内にURLを入れても表示できる
+
+PC上ディレクトリ内にある画像を表示する時
+Widget内にImage.asset('images/sample_png.png')
+と書くだけじゃエラーが出るので
+pubspec.yaml の flutter下にパスを指定してあげる
+assets:
+    - images/sample.png みたいな感じ

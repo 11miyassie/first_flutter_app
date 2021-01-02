@@ -48,7 +48,11 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Container(
         width: double.infinity,
-        child: TextField(),
+        child: TextField(
+          decoration: InputDecoration(
+            hintText: 'テキストを入力',
+          ),
+        ),
       ),
     );
   }

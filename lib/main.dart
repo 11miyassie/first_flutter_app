@@ -50,37 +50,28 @@ class _MyHomePageState extends State<MyHomePage> {
           Icon(Icons.share)
         ],
       ),
-      body: Center(
+      body: Container(
+        width: double.infinity,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
+
           children: [
-            Icon(
-              Icons.mark_email_read,
-              size: 200,
+            Container(
+              width: double.infinity,
+              child: Text('york',
+                textAlign: TextAlign.left,
+                style: TextStyle(
+                  fontSize: 30,
+                  color: Colors.green,
+                  fontStyle: FontStyle.italic,
+                  decoration: TextDecoration.underline,
+                ),
+              ),
             ),
-            RaisedButton(
-              child: Text(text),
-              onPressed: () async {
-                // ここに押したら反応するコードをかく
-                // 画面遷移のコード
-                final result = await Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => NextPage('york'),
-                  ),
-                );
-                text = result;
-                print(result);
-              },
-            ),
+            Text('miya'),
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }

@@ -57,6 +57,9 @@ class _MyHomePageState extends State<MyHomePage> {
               decoration: InputDecoration(
                 hintText: 'テキストを入力',
               ),
+              onChanged: (text) {
+                print("First text field: $text");
+              },
             ),
             TextField(
               focusNode: myFocusNode,
@@ -64,7 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
             RaisedButton(
               child: Text('フォーカス'),
               onPressed: (){
-                myFocusNode.requestFocus();
+
               },
             )
           ],

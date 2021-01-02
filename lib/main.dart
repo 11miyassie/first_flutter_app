@@ -48,6 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Container(
         width: double.infinity,
+        child: TextField(),
       ),
     );
   }

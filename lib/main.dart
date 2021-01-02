@@ -40,6 +40,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
   String text = '次へ';
 
+  final myFocusNode = FocusNode();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -48,10 +50,24 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Container(
         width: double.infinity,
-        child: TextField(
-          decoration: InputDecoration(
-            hintText: 'テキストを入力',
-          ),
+        child: Column(
+          children: [
+            TextField(
+              autofocus: true,
+              decoration: InputDecoration(
+                hintText: 'テキストを入力',
+              ),
+            ),
+            TextField(
+              focusNode: myFocusNode,
+            ),
+            RaisedButton(
+              child: Text('フォーカス'),
+              onPressed: (){
+                myFocusNode.requestFocus();
+              },
+            )
+          ],
         ),
       ),
     );

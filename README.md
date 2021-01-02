@@ -44,3 +44,5 @@ assets:
 フォームを作る時は child: TextField() でできる、（）を内にCSSみたいな感じで装飾可能
 TextFromFieldでフォームを作ったらvalidationとかもできるから、実装するときはこっちのほうがいいかも
 TextField 内に autofocus: true があると、その画面を開いた時に自動でキーボードが出てくるようになる。UI/UX的に良いかも
+
+FocusNode処理の変数.requestFocus() をonPressed内に入れると、そのボタンを押すとフォームにフォーカスされるような処理にできる

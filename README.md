@@ -40,3 +40,6 @@ Widget内にImage.asset('images/sample_png.png')
 pubspec.yaml の flutter下にパスを指定してあげる
 assets:
     - images/sample.png みたいな感じ
+    
+フォームを作る時は child: TextField() でできる、（）を内にCSSみたいな感じで装飾可能
+TextFromFieldでフォームを作ったらvalidationとかもできるから、実装するときはこっちのほうがいいかも

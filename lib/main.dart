@@ -45,32 +45,9 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
-        actions: <Widget>[
-          Icon(Icons.add),
-          Icon(Icons.share)
-        ],
       ),
       body: Container(
         width: double.infinity,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-
-          children: [
-            Container(
-              width: double.infinity,
-              child: Text('york',
-                textAlign: TextAlign.left,
-                style: TextStyle(
-                  fontSize: 30,
-                  color: Colors.green,
-                  fontStyle: FontStyle.italic,
-                  decoration: TextDecoration.underline,
-                ),
-              ),
-            ),
-            Text('miya'),
-          ],
-        ),
       ),
     );
   }

@@ -46,3 +46,10 @@ TextFromFieldでフォームを作ったらvalidationとかもできるから、
 TextField 内に autofocus: true があると、その画面を開いた時に自動でキーボードが出てくるようになる。UI/UX的に良いかも
 
 FocusNode処理の変数.requestFocus() をonPressed内に入れると、そのボタンを押すとフォームにフォーカスされるような処理にできる
+
+COOKBOOK
+final myController = TextEditingController();
+は、別の場所で入力された情報を取得する場合に使い
+onChanged: (text) {
+  name = text;
+}, は都度入力に応じて情報を取得する場合に使うために変数に入れる

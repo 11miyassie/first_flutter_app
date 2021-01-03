@@ -60,7 +60,6 @@ class _MyHomePageState extends State<MyHomePage> {
                 hintText: 'テキストを入力',
               ),
               onChanged: (text) {
-                print("First text field: $text");
               },
             ),
             TextField(

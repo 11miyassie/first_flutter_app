@@ -70,7 +70,14 @@ class _MyHomePageState extends State<MyHomePage> {
             RaisedButton(
               child: Text('フォーカス'),
               onPressed: (){
-                print(myController.text);
+                showDialog(
+                  context: context,
+                  builder: (context) {
+                    return AlertDialog(
+                      content: Text(myController.text),
+                    );
+                  },
+                );
               },
             )
           ],

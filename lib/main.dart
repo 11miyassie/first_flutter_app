@@ -42,6 +42,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
   final myFocusNode = FocusNode();
 
+  final myController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -62,12 +64,13 @@ class _MyHomePageState extends State<MyHomePage> {
               },
             ),
             TextField(
+              controller: myController,
               focusNode: myFocusNode,
             ),
             RaisedButton(
               child: Text('フォーカス'),
               onPressed: (){
-
+                print(myController.text);
               },
             )
           ],

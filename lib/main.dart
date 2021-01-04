@@ -30,20 +30,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
-  String text = '次へ';
-
-  final myFocusNode = FocusNode();
-
-  final myController = TextEditingController();
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -52,35 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Container(
         width: double.infinity,
-        child: Column(
-          children: [
-            TextField(
-              autofocus: true,
-              decoration: InputDecoration(
-                hintText: 'テキストを入力',
-              ),
-              onChanged: (text) {
-              },
-            ),
-            TextField(
-              controller: myController,
-              focusNode: myFocusNode,
-            ),
-            RaisedButton(
-              child: Text('フォーカス'),
-              onPressed: (){
-                showDialog(
-                  context: context,
-                  builder: (context) {
-                    return AlertDialog(
-                      content: Text(myController.text),
-                    );
-                  },
-                );
-              },
-            )
-          ],
-        ),
+        child: Container(),
       ),
     );
   }

@@ -1,5 +1,11 @@
 # first_flutter_app
 
+リストを作るにはListView Widgetを使い、子要素にListTileを行として使うイメージ
+ちなみにListViewではなくColumn widgetとかにすると、スクロール対応しなくなって、画面からはみ出ている対応不可なものとして扱われる。
+ListTile内にonTapを追加し、画面遷移のコードをいれることでルーティングしたページへ移動することができる
+さらにその中で  MaterialPageRoute(builder: (context) => NextPage('次にきた')),  のように次の画面へデータを渡すことも可能
+
+
 画面から画面はデータを渡すにはonPressed内のコードで渡したい画面のルートに情報を書き、渡されたページで
   NextPage(this.name);
   final String name; と書く。nameは変数名

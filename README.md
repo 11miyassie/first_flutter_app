@@ -12,7 +12,7 @@ final items = List.generate(100, (i) => "Item $i");
 itemCount: items.length, はitemsの個数(長さ)を指す
 
 crossAxisCountは横何列のリストにするかを指定
-
+scrollDirection: Axis.horizontal だと横に並んで横にスクロールできる。verticalは縦に並んで縦にスクロールできる
 
 画面から画面はデータを渡すにはonPressed内のコードで渡したい画面のルートに情報を書き、渡されたページで
   NextPage(this.name);

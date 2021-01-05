@@ -40,14 +40,17 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Container(
         width: double.infinity,
-        child: ListView.builder(
-          itemCount: items.length,
-          itemBuilder: (context, index) {
-            return ListTile(
-              title: Text('${items[index]}'),
+        child: GridView.count(
+          crossAxisCount: 2,
+          children: List.generate(100, (index) {
+            return Center(
+              child: Text(
+                'Item $index',
+                style: Theme.of(context).textTheme.headline5,
+              ),
             );
-          },
-        )
+          }),
+        ),
       ),
     );
   }

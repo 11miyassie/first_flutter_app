@@ -11,6 +11,9 @@ final items = List.generate(100, (i) => "Item $i");
 ここでいうインデックスは添字のこと
 itemCount: items.length, はitemsの個数(長さ)を指す
 
+crossAxisCountは横何列のリストにするかを指定
+
+
 画面から画面はデータを渡すにはonPressed内のコードで渡したい画面のルートに情報を書き、渡されたページで
   NextPage(this.name);
   final String name; と書く。nameは変数名

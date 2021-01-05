@@ -5,6 +5,10 @@
 ListTile内にonTapを追加し、画面遷移のコードをいれることでルーティングしたページへ移動することができる
 さらにその中で  MaterialPageRoute(builder: (context) => NextPage('次にきた')),  のように次の画面へデータを渡すことも可能
 
+final items = List.generate(100, (i) => "Item $i");
+は変数にリスト(List.generate)を代入してる
+100は0から99までの100件、(i)はインデックスが入っている
+ここでいうインデックスは添字のこと
 
 画面から画面はデータを渡すにはonPressed内のコードで渡したい画面のルートに情報を書き、渡されたページで
   NextPage(this.name);

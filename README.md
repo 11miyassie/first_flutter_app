@@ -9,6 +9,7 @@ final items = List.generate(100, (i) => "Item $i");
 は変数にリスト(List.generate)を代入してる
 100は0から99までの100件、(i)はインデックスが入っている
 ここでいうインデックスは添字のこと
+itemCount: items.length, はitemsの個数(長さ)を指す
 
 画面から画面はデータを渡すにはonPressed内のコードで渡したい画面のルートに情報を書き、渡されたページで
   NextPage(this.name);
